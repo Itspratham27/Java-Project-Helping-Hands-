@@ -1,0 +1,125 @@
+*{
+    border: 0;
+    padding:0;
+    margin: 0;
+}
+#logo{
+    
+    position: absolute;
+    top: 17px;
+    left:75px;;
+    color: white;
+}
+
+.nav .nav-item{
+    padding-right: 20px;
+    align-items: center;
+  
+}
+.nav{
+    margin-top: 20px;
+    padding-left: 250px;
+    margin-left: 34px;
+}
+.nav .nav-item .nav-link{
+    color: white;
+
+}
+/* #section1{
+    
+    position: absolute;
+    
+} */
+#sec{
+    margin-top: 250px;
+    margin-left: 130px;
+    
+}
+
+#sec h1,h4{
+    color:#fafafa;
+}
+#sec h1{
+    font: 48px Jost,sans-serif;
+}
+#sec h4{
+    font: 19.2px Jost,sans-serif;
+}
+section{
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    */
+    display: flex;
+    /* justify-content: center; */
+    width: 100%;
+    height: 100vh;
+}
+
+section:nth-child(1){
+    background-image: url('../../../../assets/relief.jpg');
+    background-size: cover;
+     /* height: 100%;
+    width: 100%;  */
+}
+/* section{
+   
+    width: 100%;
+    height: 100vh;
+
+} */
+#education{
+    color: #232323;
+    background: #EEEEEE;
+    padding: 48px 0px;
+    margin-top: 100px;
+}
+#cloth{
+    color: #232323;
+    background: #EEEEEE;
+    padding: 48px 0px;
+}
+
+
+
+
+
+/* Footer */
+.gray{
+    background-color: lightgray;
+    margin-top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  
+}
+.margin{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 40px;
+    display: flex;
+    gap: 80px;
+}
+
+
+.column1{
+    width: 200px;
+
+}
+.column2 a{
+    color: black;
+    display: block;
+    padding-top: 10px;
+    text-decoration: none;
+}
+.column3 a{
+    color: black;
+    display: block;
+    padding-top: 10px;
+    text-decoration: none;
+}
+.column4 i{
+    padding-left: 10px;
+}

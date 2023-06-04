@@ -1,0 +1,62 @@
+<table>
+    <thead>
+        <th>adminId</th>
+        <th>adminEmail</th>
+        <th>adminPassword</th>
+        <th scope="col">Operations</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let a of admin">
+            <th>{{a.adminId}}</th>
+            <th>{{a.adminEmailId}}</th>
+            <th>{{a.adminPassword}}</th>
+            <th><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click) = "updateAdmins(a)" >EDIT</button> &nbsp; <button type="button" class="btn btn-danger" (click) = "deleteAdmin(a.adminId)">DELETE</button></th>
+        </tr></tbody>
+      
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Update Admin</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form style="text-align: center;" (ngSubmit)="updateAdmin()"  >
+            
+    <fieldset>
+       <legend style="text-align: center;"><h1>Add Admin Details </h1> </legend>
+<br>
+           <legend>Personal Information</legend>
+           <br>
+           <div>
+               <label for="adminId">Enter your adminId</label>
+               <input type="number" name="adminId"  [(ngModel)] = "admin1.adminId">
+           </div>
+           <br>
+           <div>
+               <label for="adminEmailId">Enter Admin EmailId</label>
+               <input type="email" name="adminEmailId" [(ngModel)]= "admin1.adminEmailId">
+
+            </div>
+            <br>
+            <div>
+                <label for="adminPassword">Enter admin Password</label>
+                <input type="text" name="adminPassword" [(ngModel)]= "admin1.adminPassword">
+ 
+            </div>
+            <br>
+       <br>
+       <div style="text-align: center;">
+           <input type="submit">
+       </div>
+<br>
+   </fieldset>
+</form>
+
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fiding India</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+    <link rel="stylesheet" href="/style.css" /> -->
+  </head>
+  <body>
+
+
+    <section id="Navigation">
+      <div class="header">
+        <div id="section1">
+          <ul class="nav justify-content-center">
+            <li id="logo" class="nav-item" (click) = "Index()">
+              <img src="../../../../assets/logo.png" width="50px"/>
+              <strong >Helping Hands</strong>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                >About Us</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" (click) = "mission()">Mission</a>
+                </li>
+                <li><a class="dropdown-item" (click) = "mission()">Vision</a></li>
+                <li><a class="dropdown-item" (click) = "mission()">Team</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                >Our Work</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" (click)= "dailyFeeding()"
+                    >Daily Feeding Program</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" (click)= "ReliefCampaign()"
+                    >Relief Campeign</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                >Partner With Us</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" (click)= "NgoLogin()">NGO Login</a></li>
+                <li><a class="dropdown-item" (click)= "HotelLogin()">Hotel Login</a></li>
+                <li><a class="dropdown-item" (click)= "VolunteerLogin()">Volunteer Login</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                >Call To Action</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" (click) = "ContactUs()">Contact Us</a></li>
+                <li><a class="dropdown-item" (click) = "AdminLogin()">Admin</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <button type="button" class="btn btn-danger" (click)= "ReliefCampaign()">Donate Now</button>
+            </li>
+          </ul>
+  
+            <div id="sec">
+              <h1>Reducing <strong>food waste</strong></h1>
+              <h4> The breakfast buffet is a prime target when it comes to reducing food waste in hotels.</h4>
+              <button type="button" class="btn btn-danger" (click)= "SignUp()">Register Now</button>
+            </div>
+        
+        
+        
+          </div>
+        </div>
+      </section>
+
+      <!-- <section  class="content4 cid-tDA6H4YKk7" id="content4-26">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="title col-md-12 col-lg-10">
+                    
+                </div>
+            </div>
+        </div>
+        
+    </section> -->
+
+   -
+
+    
+
+    
+   <section  class="content4 cid-tDA6H4YKk7" id="content4-26">
+      <div class="container">
+          <div class="content-wrapper">
+              <div class="row align-items-center">
+                  <div class="col-12 col-lg">
+                      <div class="text-wrapper">
+                          <h6 class="card-title mbr-fonts-style display-4">Tata Food Policy</h6>
+                          <p class="mbr-text mbr-fonts-style mb-4 display-7">Mr. Ratan Tata Tweet...
+  <br>Germany is a highly industrialized country. In such a country, many will think its people lead a luxurious life.
+  <br>When we arrived at Hamburg , my colleagues walked into the restaurant, we noticed that a lot of tables were empty. There was a table where a young couple was having their meal. There were only two dishes and two cans of beer on the table. I wondered if such simple meal could be romantic, and whether the girl will leave this stingy guy.
+  <br>There were a few old ladies on another table. When a dish is served, the waiter would distribute the food for them, and they would finish every bit of the food on their plates.
+  <br>As we were hungry, our local colleague ordered more food for us.When we left, there was still about one third of un-consumed food on the table.
+  <br>When we were leaving the restaurant, the old ladies spoke to us in English, we understood that they were unhappy about us wasting so much food.
+  <br>"We paid for our food, it is none of your business how much food we left behind," my colleague told the old ladies. The old ladies were furious. One of them immediately took her hand phone out and made a call to someone. After a while, a man in uniform from Social Security organisation arrived. Upon knowing what the dispute was, he issued us a 50 Euro fine. We all kept quiet.
+  <br>The officer told us in a stern voice, "ORDER WHAT YOU CAN CONSUME, MONEY IS YOURS BUT RESOURCES BELONG TO THE SOCIETY. THERE ARE MANY OTHERS IN THE WORLD WHO ARE FACING SHORTAGE OF RESOURCES. YOU HAVE NO REASON TO WASTE RESOURCES."
+  <br>The mindset of people of this rich country put all of us to shame. WE REALLY NEED TO REFLECT ON THIS. We are from country which is not very rich in resources. To save face, we order large quantity and also waste food when we give others a treat.
+  <br>(Courtesy: A friend who is now changed a lot)
+  <br>THE LESSON IS:- THINK SERIOUSLY ABOUT CHANGING OUR BAD HABITS. Expecting acknowledgment, that u read the message and forward to your contacts. 
+  <br>VERY TRUE -"MONEY IS YOURS BUT RESOURCES BELONG TO THE SOCIETY."</p>
+                          
+                      </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                      <div class="image-wrapper">
+                          <img src="../../../../assets/Ratan_N_Tata_sm.jpg" alt="....">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+  </section> 
+  <br>
+  <br><br><br>
+
+      
+      <section id="loginform">
+        <div class="pt-5">  
+          <div class="global-container">  
+            <div class="card login-form">  
+            <div class="card-body">  
+                <h3 class="card-title text-center"> HOTEL LOGIN </h3>  
+                <div class="card-text">  
+                    <form>  
+                        <div class="form-group">  
+                            <label for="exampleInputEmail1"> Enter Email address </label>  
+                            <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">  
+                        </div>  
+                        <div class="form-group">  
+                            <label for="exampleInputPassword1">Enter Password </label>   
+                            <input type="password" class="form-control form-control-sm" id="exampleInputPassword1">  
+                        </div>  
+                        <button type="submit" class="btn btn-primary btn-block"> Sign in </button>  
+                          
+                        <div class="sign-up" (click)= "SignUp()">  
+                            Don't have an account? Create One   
+                        </div>  
+                    </form>  
+                </div>  
+            </div>  
+        </div>  
+        </div> 
+        </div> 
+      </section>
+      <section>
+    <div class="header">
+        <h1 class="text-center">NGO Data</h1>
+    </div>
+    <table class="table table-striped ">
+        <thead style="background-color:#D6DBDF ;" >
+          <tr>
+            <th scope="col">Registration No</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Pincode</th>
+            <th scope="col">Email</th>
+            <th scope="col">Contact</th>
+            <th scope="col">Website</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let n of ngo">
+                <th scope="row">{{n.ngoId}}</th>
+                <th>{{n.ngoName}}</th>
+                <th>{{n.ngoAddress}}</th>
+                <th>{{n.ngoPincode}}</th>
+                <th>{{n.ngoEmailId}}</th>
+                <th>{{n.ngoContactNumber}}</th>
+                <th>{{n.ngoWebsite}}</th>
+            </tr>
+        </tbody>
+      </table>
+</section>
+
+
+<section>
+  <section>
+  <div class="header">
+      <h1 class="text-center">Donor Data</h1>
+  </div>
+
+  <input type="number" [(ngModel)] = "Ids">
+<button type="submit" (click) = "searchIdDonor(Ids)">SEARCH</button>
+  <input type="text" [(ngModel)] = "Names">
+  <button type="submit" (click) = "searchNameDonor(Names)">SEARCH</button>
+<table class="table table-striped ">
+  <thead style="background-color:#D6DBDF ;">
+      <th scope="col">donorId</th>
+      <th scope="col">donorName</th>
+      <th scope="col">donorGender</th>
+      <th scope="col">donorRegistrationDate</th>
+      <th scope="col">donorEmailId</th>
+      <th scope="col">donorContactNumber</th>
+      <th scope="col">ngoId</th>
+      <th scope="col">donorAddress</th>
+      <th scope="col">donorPincode</th>
+      <th scope="col">donorType</th>
+      <th scope="col">Operations</th>
+  </thead>
+  <tbody>
+      <tr *ngFor="let d of donor">
+          <th scope="row">{{d.donorId}}</th>
+          <th>{{d.donorName}}</th>
+          <th>{{d.donorGender}}</th>
+          <th>{{d.donorRegistrationDate}}</th>
+          <th>{{d.donorEmailId}}</th>
+          <th>{{d.donorContactNumber}}</th>
+          <th>{{d.ngoId}}</th>
+          <th>{{d.donorAddress}}</th>
+          <th>{{d.donorPincode}}</th>
+          <th>{{d.donorType}}</th>
+          <th><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1"  (click) = "updateDonors(d)">EDIT</button> &nbsp;<button type="button" class="btn btn-danger" (click) = "searchIdDonation(d.donorId)">TRIAL</button>&nbsp; &nbsp; <button type="button" class="btn btn-danger" (click) = "searchIdNgo(d.ngoId)">NGO</button></th>
+      </tr></tbody>
+</table>
+</section>
+
+<div class="header">
+  <h1 class="text-center">Donation Data</h1>
+</div>
+<input type="number" [(ngModel)] = "Id">
+<button type="submit" (click) = "searchIdDonation(Id)">SEARCH</button>
+<input type="text" [(ngModel)] = "Name">
+<button type="submit" (click) = "searchNameDonation(Name)">SEARCH</button>
+<section>
+  <table class="table table-striped ">
+    <thead style="background-color:#D6DBDF ;" >
+        <th>donationId</th>
+        <th>donationDate</th>
+        <th>weekDay</th>
+        <th>donationType</th>
+        <th>donationQuantity</th>
+        <th>ngoId</th>
+        <th>donorId</th>
+        <th>donationAddress</th>
+        <th scope="col">donationPincode</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let d of donation">
+            <th>{{d.donationId}}</th>
+            <th>{{d.donationDate}}</th>
+            <th>{{d.weekDay}}</th>
+            <th>{{d.donationType}}</th>
+            <th>{{d.donationQuantity}}</th>
+            <th>{{d.ngoId}}</th>
+            <th>{{d.donorId}}</th>
+            <th>{{d.donationAddress}}</th>
+            <th>{{d.donationPincode}}</th>
+        </tr></tbody>
+</table>
+
+
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Update Admin</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form style="text-align: center;" (ngSubmit)= "updateDonor()" >
+          
+          <fieldset>
+              <legend style="text-align: center;"><h1>Add DONOR Details </h1> </legend>
+       <br>
+                  <legend>Personal Information</legend>
+                  <br>
+                  <div>
+                      <label for="donorId">Enter Donor Id</label>
+                      <input type="number" name="donorId" placeholder="eg. 1" [(ngModel)]="donor1.donorId">
+                  </div>
+                  <br>
+                  <div>
+                      <label for="donorName">Enter Donor Name</label>
+                      <input type="text" name="donorName" [(ngModel)]="donor1.donorName">
+                  </div>
+                  <br>
+                  <div>
+                        <label for="donorGender">Enter Donor Gender</label>
+                        <input type="text" name="donorGender" [(ngModel)]="donor1.donorGender">
+                  </div>
+                  <br>
+                  <div>
+                      <label for="donorEmailId">Enter Donor EmailId</label>
+                      <input type="donorEmailId" name="donorEmailId" [(ngModel)]="donor1.donorEmailId">
+                   </div>
+                   <br>
+                   <div>
+                       <label for="donorContactNumber">Enter Donor Contact Number</label>
+                       <input type="text" name="donorContactNumber" [(ngModel)]="donor1.donorContactNumber">
+                   </div>
+                   <br>
+                  <div>
+                      <label for="ngoId">Enter NGO Id</label>
+                      <input type="number" name="ngoId" [(ngModel)]="donor1.ngoId">
+                  </div>
+                  <br>
+                  <div>
+                      <label for="donorAddress">Enter Donor Address</label>
+                      <input type="text" name="donorAddress" [(ngModel)]="donor1.donorAddress">
+                  </div>
+                <br>
+                <div>
+                    <label for="donorPincode">Enter Donor Pincode</label>
+                    <input type="number" name="donorPincode"  [(ngModel)]="donor1.donorPincode">
+                </div>
+                <br>
+                  <div>
+                        <label for="donorType">Enter Donor Type</label>
+                        <input type="text" name="donorType" [(ngModel)]="donor1.donorType">
+                  </div>
+                   <br>
+              <br>
+              <div style="text-align: center;">
+                  <input type="submit">
+              </div>
+       <br>
+          </fieldset>
+     </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="gray">
+  <div class="margin">
+    <div class="column1">
+      <img
+          src="../../../../assets/logo.png"
+          width="50px"
+        />
+        <strong>Helping Hands</strong>
+       <p>Symbiosis Skills and Professional<br>University,Pune.<br><br>All donations are tax-exempted as eligible under section 80G of the Income Tax Act, 1961.</p>
+    </div>
+    <div class="column2">
+      <h5>Who We are</h5>
+      <a (click) = "mission()">About us</a>
+      <a (click) = "ContactUs()">Contact us</a>
+      
+    </div>
+    <div class="column3">
+      <h5>Get Involved</h5>
+      <a (click)= "ReliefCampaign()">Donate</a>
+      <a (click) = "ContactUs()">Request for food</a>
+    </div>
+    <div class="column4">
+      <h5>Social</h5>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-twitter"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-linkedin"></i>
+    </div>
+  </div>
+</div>
+
+<!--end-->
+

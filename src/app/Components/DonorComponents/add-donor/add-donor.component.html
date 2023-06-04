@@ -1,0 +1,72 @@
+
+<form style="text-align: center;" (ngSubmit)="onSubmit()">
+
+    <fieldset>
+       <legend style="text-align: center;"><h1>Add DONOR Details </h1> </legend>
+<br>
+           <legend>Personal Information</legend>
+           <br>
+           <div>
+               <label for="donorId">Enter Donor Id</label>
+               <input type="number" name="donorId" placeholder="eg. 1" [(ngModel)]="donor.donorId">
+           </div>
+           <br>
+           <div>
+               <label for="donorName">Enter Donor Name</label>
+               <input type="text" name="donorName" [(ngModel)]="donor.donorName">
+           </div>
+           <br>
+           <div>
+                 <label for="donorGender">Enter Donor Gender</label>
+                 <input type="text" name="donorGender" [(ngModel)]="donor.donorGender">
+           </div>
+           <br>
+           <div>
+               <label for="donorEmailId">Enter Donor EmailId</label>
+               <input type="donorEmailId" name="donorEmailId" [(ngModel)]="donor.donorEmailId">
+            </div>
+            <br>
+            <div>
+                <label for="donorContactNumber">Enter Donor Contact Number</label>
+                <input type="text" name="donorContactNumber" [(ngModel)]="donor.donorContactNumber">
+            </div>
+            <br>
+           <div>
+               <label for="ngoId">Enter NGO Id</label>
+               <input type="number" name="ngoId" placeholder="eg. 1" [(ngModel)]="donor.ngoId">
+           </div>
+           <br>
+           <div>
+               <label for="donorAddress">Enter Donor Address</label>
+               <input type="text" name="donorAddress" [(ngModel)]="donor.donorAddress">
+           </div>
+         <br>
+         <div>
+             <label for="donorPincode">Enter Donor Pincode</label>
+             <input type="number" name="donorPincode" placeholder="eg. 1" [(ngModel)]="donor.donorPincode">
+         </div>
+         <br>
+           <div>
+                 <label for="donorType">Enter Donor Type</label>
+                 <input type="text" name="donorType" [(ngModel)]="donor.donorType">
+           </div>
+            <br>
+       <br>
+       <div style="text-align: center;">
+           <input type="submit">
+           <button type="reset" (click)="cancel()">Cancel</button>
+       </div>
+<br>
+   </fieldset>
+</form>
+
+
+
+
+   
+
+
+
+
+
+//     "donorType": "Organisation"

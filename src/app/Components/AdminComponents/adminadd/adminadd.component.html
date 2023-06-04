@@ -1,0 +1,34 @@
+<form style="text-align: center;" (ngSubmit)="onSubmit()">
+
+    <fieldset>
+       <legend style="text-align: center;"><h1>Add Admin Details </h1> </legend>
+<br>
+           <legend>Personal Information</legend>
+           <br>
+           <div>
+               <label for="adminId">Enter your First Name</label>
+               <input type="number" name="adminId" placeholder="eg. 1" [(ngModel)]="admin.adminId">
+           </div>
+           <br>
+           <div>
+               <label for="adminEmailId">Enter Admin EmailId</label>
+               <input type="email" name="adminEmailId"[(ngModel)]="admin.adminEmailId">
+
+            </div>
+            <br>
+            <div>
+                <label for="adminPassword">Enter admin Password</label>
+                <input type="text" name="adminPassword"[(ngModel)]="admin.adminPassword">
+ 
+            </div>
+            <br>
+       <br>
+       <div style="text-align: center;">
+           <input type="submit">
+           <button type="reset">Reset</button>
+       </div>
+
+<br>
+   </fieldset>
+</form>
+

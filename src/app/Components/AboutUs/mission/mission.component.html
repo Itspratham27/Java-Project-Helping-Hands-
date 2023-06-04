@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    /> <!--<link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+    <link rel="stylesheet" href="/AboutUs1.css" /> -->
+    
+    <title>AboutUs</title>
+
+</head>
+<body>
+    
+  <section id="Navigation">
+    <div class="header">
+      <div id="section1">
+        <ul class="nav justify-content-center">
+          <li id="logo" class="nav-item" (click) = "Index()">
+            <img src="../../../../assets/logo.png" width="50px"/>
+            <strong >Helping Hands</strong>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              >About Us</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" (click) = "mission()">Mission</a>
+              </li>
+              <li><a class="dropdown-item" (click) = "mission()">Vision</a></li>
+              <li><a class="dropdown-item" (click) = "mission()">Team</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              >Our Work</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" (click)= "dailyFeeding()"
+                  >Daily Feeding Program</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" (click)= "ReliefCampaign()"
+                  >Relief Campeign</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              >Partner With Us</a
+            >
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" (click)= "NgoLogin()">NGO Login</a></li>
+              <li><a class="dropdown-item" (click)= "HotelLogin()">Hotel Login</a></li>
+              <li><a class="dropdown-item" (click)= "VolunteerLogin()">Volunteer Login</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              >Call To Action</a
+            >
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" (click) = "ContactUs()">Contact Us</a></li>
+              <li><a class="dropdown-item" (click) = "AdminLogin()">Admin</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <button type="button" class="btn btn-danger" (click)= "ReliefCampaign()">Donate Now</button>
+          </li>
+        </ul>
+           
+            <div id="sec">
+              <h1>Our Mission</h1>
+              <h4>Working towards an India free of hunger and malnutrition.</h4>
+              <button type="button" class="btn btn-danger" (click)= "ReliefCampaign()">Donate Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<section data-bs-version="5.1" class="header14 cid-tDsarGzMAm mbr-fullscreen" id="vision">
+
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-6 image-wrapper">
+                <img src="../../../../assets/vision.jpeg" alt="...." height="250px">
+            </div>
+            <div class="col-12 col-md">
+                <div class="text-wrapper">
+                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2">Our Vision</h1>
+                    <p class="mbr-text mbr-fonts-style display-7">Helping Hands is a non-profit organization dedicated to eradicate hunger and improve malnutrition outcomes in India.
+<br>
+<br>We work toward this mission by supporting large-scale systemic interventions as well as providing essential food support to underserved communities in the form of raw grains and freshly cooked food.
+<br>
+<br>Feeding India works with on-ground non profit partners working on education and child/maternal malnutrition by providing regular meals to dependents.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section data-bs-version="5.1" class="team1 cid-tDseODZklY" id="team">
+    
+
+    
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h3 class="mbr-section-title mbr-fonts-style text-center mb-4 display-4">Meet the team</h3>
+                
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card-wrap">
+                    <div class="image-wrap">
+                        <img src="../../../../assets/dig.jpeg" alt="..." height="250px" width="250px">
+                    </div>
+                    <div class="content-wrap">
+                        <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-6">Digvijay<br>Lad</h5>
+                        <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-7">Head, Helping Hands</h6>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="card-wrap">
+                    <div class="image-wrap">
+                        <img src="../../../../assets/pratham-3-518x1137.jpeg" alt="..." height="250px" width="250px">
+                    </div>
+                    <div class="content-wrap">
+                        <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-6">Pratham Poreddiwar</h5>
+                        <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-7">Lead (Finance)</h6>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="card-wrap">
+                    <div class="image-wrap">
+                        <img src="../../../../assets/shravan-2-518x777.jpeg" alt="..." height="250px" width="250px">
+                    </div>
+                    <div class="content-wrap">
+                        <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-6">Shravan<br>Patne</h5>
+                        <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-7">Lead (Marketing)</h6>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="card-wrap">
+                    <div class="image-wrap">
+                        <img src="../../../../assets/guru.jpeg" alt="..." height="250px" width="250px">
+                    </div>
+                    <div class="content-wrap">
+                        <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-6">Guruprasad<br>Sangle</h5>
+                        <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-7">
+                            Founder,Helping Hands
+                        </h6>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="footer">
+  <!--footer-->
+  <div class="gray">
+    <div class="margin">
+      <div class="column1">
+        <img
+            src="../../../../assets/logo.png"
+            width="50px"
+          />
+          <strong>Helping Hands</strong>
+         <p>Symbiosis Skills and Professional<br>University,Pune.<br><br>All donations are tax-exempted as eligible under section 80G of the Income Tax Act, 1961.</p>
+      </div>
+      <div class="column2">
+        <h5>Who We are</h5>
+        <a (click) = "mission()">About us</a>
+        <a (click) = "ContactUs()">Contact us</a>
+        
+      </div>
+      <div class="column3">
+        <h5>Get Involved</h5>
+        <a (click)= "ReliefCampaign()">Donate</a>
+        <a (click) = "ContactUs()">Request for food</a>
+      </div>
+      <div class="column4">
+        <h5>Social</h5>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-linkedin"></i>
+      </div>
+    </div>
+  </div>
+
+

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fiding India</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+    <link rel="stylesheet" href="/style.css" /> -->
+  </head>
+  <body>
+
+
+    <section id="Navigation">
+      <div class="header">
+        <div id="section1">
+          <ul class="nav justify-content-center">
+            <li id="logo" class="nav-item" (click) = "Index()">
+              <img src="../../../../assets/logo.png" width="50px"/>
+              <strong >Helping Hands</strong>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                >About Us</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" (click) = "mission()">Mission</a>
+                </li>
+                <li><a class="dropdown-item" (click) = "mission()">Vision</a></li>
+                <li><a class="dropdown-item" (click) = "mission()">Team</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                >Our Work</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" (click)= "dailyFeeding()"
+                    >Daily Feeding Program</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" (click)= "ReliefCampaign()"
+                    >Relief Campeign</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                >Partner With Us</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" (click)= "NgoLogin()">NGO Login</a></li>
+                <li><a class="dropdown-item" (click)= "HotelLogin()">Hotel Login</a></li>
+                <li><a class="dropdown-item" (click)= "VolunteerLogin()">Volunteer Login</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                >Call To Action</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" (click) = "ContactUs()">Contact Us</a></li>
+                <li><a class="dropdown-item" (click) = "AdminLogin()">Admin</a></li>
+              </ul>
+            </li>
+
+           
+          </ul>
+  
+            <div id="sec">
+              <h1>YOUR SUPPORT MATTERS</h1>
+              <h4>Contribute to help us provide essential food support to those in need.</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mbr-fullscreen" id="food">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-5 image-wrapper">
+                    <img src="../../../../assets/lunch-300x168.jpg" alt="food"  height="300px"width="400px">
+                </div>
+                <div class="col-12 col-md">
+                    <div class="text-wrapper">
+                        <h1 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong>Food Donation</strong></h1>
+                        <p class="mbr-text mbr-fonts-style display-7">In response to the unprecedented crisis created in the field of education due to school closures, the government reacted swiftly and designed remote learning policies. The most common of them all was digital instruction.  
+    <br>
+    <br>"At least 463 million school children in the world, were unable to access remote learning during 2020 " - UNICEF
+    <br>
+    <br>The major contributing factor to reduced learning capabilities in children is directly impacted by health and nutrition. Evidence in India has shown that food insecurity during childhood reduced reading capability and numeracy scores while resulting in depleting short-term memory. Mid-day meals are a great incentive to bring children back to school and a means to keep their nutritional levels in check. Nutritious meals help children concentrate in class and help in eliminating classroom hunger. 
+    <br>
+    <br>The Helping Hands serves mid-day meals to school children in government and government-aided schools of India. 
+    <br>
+    <br>Children have come back to school after 1.5 years of being away from school. This year, children from challenging socio-economic backgrounds have spent 6 months studying at home (with or without healthy food), but, they yet have 4 more months to gain the best of the knowledge and become healthier each day. While you help them with mid-day meals, you gain tax exemption u/s 80G too. 
+    <br>
+    <br></p>
+    <button type="button" class="btn btn-danger" (click)="openModal()">
+      Support Us
+  </button>
+  <!--Bootstrap modal -->
+<div class="modal fade" id="Donate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="Donate">Online Donation</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="doSomething()">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body text-center">
+<div>Online Payment</div>
+<img src="../../assets/QR.jpg" alt="QR" height="150px" width="150px">
+</div>
+<br><hr>
+<div class="modal-header">
+                
+<h5>Donate to NGO</h5>
+
+</div>
+<br>
+<div class="mx-3">
+Our NGO Volunteers collect your donation items from your door<br> step.Fill your details in above form.
+</div>
+<br>
+
+<div class="text-center">
+<button type="button" class="btn btn-danger " data-dismiss="modal" (click) = "Donate()">Donate Now</button>
+</div>
+<br>
+<br> 
+</div>
+</div>
+</div>            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class=" mbr-fullscreen" id="education">
+
+  <div class="container">
+      <div class="row justify-content-center align-items-center">
+          <div class="col-12 col-md-6 image-wrapper">
+              <img src="../../../../assets/study-520x331.jpg" alt="Education Donation"  height="300px"width="400px">
+          </div>
+          <div class="col-12 col-md">
+              <div class="text-wrapper">
+                  <h1 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong>Education Donation</strong></h1>
+                  <p class="mbr-text mbr-fonts-style display-7">Come, Join Save the Children or Donate to Educate Every Child in India.Education is fundamental for achieving full human potential, developing an equitable and just society, and promoting national development.<br><br>&nbsp; &nbsp;Every child, no matter who they are or where they come from, deserves access to quality learning opportunities – from the age of three years when they begin to acquire early learning skills to the end of their school education.<br><br>Here, take a look at our key pillars of building a solid foundation for children!<br></p>
+                     <!-- <div class="mbr-section-btn mt-3"><a class="btn btn-danger display-4" href="#">Support Us</a></div> -->
+                     <button type="button" class="btn btn-danger" (click)="openModal()">
+                      Support Us
+                  </button>
+                 <!--Bootstrap modal -->
+                 <div class="modal fade" id="exampleModal" tabindex="-1"
+                     role="dialog" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                     <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                             <!-- Modal heading -->
+                             <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLabel">
+                                     Food Donation
+                                 </h5>
+                                 <button type="button" class="close"
+                                     data-dismiss="modal" aria-label="Close">
+                                     <span aria-hidden="true">
+                                         ×
+                                     </span>
+                                 </button>
+                             </div>
+                             <!-- Modal body with image -->
+                             <div class="modal-body text-center">
+                                 <div>Online Payment</div>
+                                   <img src="../../../../assets/QR.jpg"  height="150px"width="150px"/>
+                             </div>
+
+                             <br><hr>
+                             <div class="modal-header">
+                               
+                               <h5>Donate to NGO</h5>
+                           
+                             </div>
+                             <br>
+                             <div>
+                              Our NGO Volunteers collect your donation items from your door<br> step.Fill your details in above form.
+                             </div>
+                             <br>
+                           <div class="text-center">
+                             <button type="button " class="btn btn-danger small" ><a href="Donation.html">Donate Now</a></button>
+                           </div>
+                           <br>
+                         </div>
+                     </div>
+                 </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class=" mbr-fullscreen" id="health">
+  <div class="container">
+      <div class="row justify-content-center align-items-center">
+          <div class="col-12 col-md-6 image-wrapper">
+              <img src="../../../../assets/health-275x183 - Copy.jpg" alt="Medical Donation"  height="300px"width="400px">
+          </div>
+          <div class="col-12 col-md">
+              <div class="text-wrapper">
+                  <h1 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong>Medical Donation</strong></h1>
+                  <p class="mbr-text mbr-fonts-style display-7">The high cost of healthcare is a massive challenge for financially-disadvantaged patients and their families. This is especially true if the treatment warrants hospitalisation, surgery, or expensive medicines or procedures.
+<br>
+<br>To compound the issue, health insurance companies often do not cover many pre-existing conditions or ailments. Even when it comes to included conditions, several insurers have set ceilings on expenses related to patient bed charges, cost of surgery, doctor’s fees, etc. Thus, health policies frequently do not cover the entire cost of the treatment.
+<br>
+<br>A medical emergency drains lower-income families of their financial, mental, and physical strength, leaving them helpless and despondent. Many of these families push themselves deep into debt by taking expensive loans to fund the treatment.</p>
+                     <!-- <div class="mbr-section-btn mt-3"><a class="btn btn-danger display-4" href="#">Support Us</a></div> -->
+                     <button type="button" class="btn btn-danger" (click)="openModal()">
+                      Support Us
+                  </button>
+                 <!--Bootstrap modal -->
+                 <div class="modal fade" id="exampleModal" tabindex="-1"
+                     role="dialog" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                     <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                             <!-- Modal heading -->
+                             <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLabel">
+                                     Food Donation
+                                 </h5>
+                                 <button type="button" class="close"
+                                     data-dismiss="modal" aria-label="Close">
+                                     <span aria-hidden="true">
+                                         ×
+                                     </span>
+                                 </button>
+                             </div>
+                             <!-- Modal body with image -->
+                             <div class="modal-body text-center">
+                                 <div>Online Payment</div>
+                                   <img src="../../../../assets/QR.jpg"  height="150px"width="150px"/>
+                             </div>
+
+                             <br><hr>
+                             <div class="modal-header">
+                               
+                               <h5>Donate to NGO</h5>
+                           
+                             </div>
+                             <br>
+                             <div>
+                              Our NGO Volunteers collect your donation items from your door<br> step.Fill your details in above form.
+                             </div>
+                             <br>
+                           <div class="text-center">
+                             <button type="button " class="btn btn-danger small" >Donate Now</button>
+                           </div>
+                           <br>
+                         </div>
+                     </div>
+                 </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="mbr-fullscreen" id="cloth">
+  <div class="container">
+      <div class="row justify-content-center align-items-center">
+          <div class="col-12 col-md-5 image-wrapper">
+              <img src="../../../../assets/cloths.jpg" alt="cloths donation" height="300px"width="400px">
+          </div>
+          <div class="col-12 col-md">
+              <div class="text-wrapper">
+                  <h1 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong>Cloths Donation</strong></h1>
+                  <p class="mbr-text mbr-fonts-style display-7">Today, more than ever, you can help your neighbors and communities in need by donating clothes and other gently used household items to local charities.
+<br> Your clothing donations make a big difference to individuals who are struggling to make ends meet.
+<br>
+<br> Donating clothing can enable a child to prosper at school among her peers.  Clothes donations can keep a family warm at night when the temperatures drop. By making a tax-deductible clothing donation to a charity in your area, you are helping to make a difference in your community.
+<br>
+<br>Children have come back to school after 1.5 years of being away from school. This year, children from challenging socio-economic backgrounds have spent 6 months studying at home (with or without healthy food), but, they yet have 4 more months to gain the best of the knowledge and become healthier each day. While you help them with mid-day meals, you gain tax exemption u/s 80G too. 
+<br></p>
+                    <!-- <div class="mbr-section-btn mt-3"><a class="btn btn-danger display-4" href="#">Support Us</a></div> -->
+                    <button type="button" class="btn btn-danger" (click)="openModal()">
+                      Support Us
+                  </button>
+                <!--Bootstrap modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1"
+                    role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <!-- Modal heading -->
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                    Food Donation
+                                </h5>
+                                <button type="button" class="close"
+                                    data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">
+                                        ×
+                                    </span>
+                                </button>
+                            </div>
+                            <!-- Modal body with image -->
+                            <div class="modal-body text-center">
+                                <div>Online Payment</div>
+                                  <img src="../../../../assets/QR.jpg"  height="150px"width="150px"/>
+                            </div>
+
+                            <br><hr>
+                            <div class="modal-header">
+                              
+                              <h5>Donate to NGO</h5>
+                          
+                            </div>
+                            <br>
+                            <div>
+                             Our NGO Volunteers collect your donation items from your door<br> step.Fill your details in above form.
+                            </div>
+                            <br>
+                          <div class="text-center">
+                            <button type="button " class="btn btn-danger small" ><a href="Donation.html">Donate Now</a></button>
+                          </div>
+                          <br>
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+    <section id="footer">
+          <!--footer-->
+          <div class="gray">
+            <div class="margin">
+              <div class="column1">
+                <img
+                    src="../../../../assets/logo.png"
+                    width="50px"
+                  />
+                  <strong>Helping Hands</strong>
+                 <p>Symbiosis Skills and Professional<br>University,Pune.<br><br>All donations are tax-exempted as eligible under section 80G of the Income Tax Act, 1961.</p>
+              </div>
+              <div class="column2">
+                <h5>Who We are</h5>
+                <a (click) = "mission()">About us</a>
+                <a (click) = "ContactUs()">Contact us</a>
+                
+              </div>
+              <div class="column3">
+                <h5>Get Involved</h5>
+                <a (click)= "ReliefCampaign()">Donate</a>
+                <a (click) = "ContactUs()">Request for food</a>
+              </div>
+              <div class="column4">
+                <h5>Social</h5>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-linkedin"></i>
+              </div>
+            </div>
+          </div>

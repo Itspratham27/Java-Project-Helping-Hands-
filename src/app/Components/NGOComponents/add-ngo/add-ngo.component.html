@@ -1,0 +1,56 @@
+
+<form style="text-align: center;" (ngSubmit)="onSubmit()">
+
+    <fieldset>
+       <legend style="text-align: center;"><h1>Add NGO Details </h1> </legend>
+<br>
+           <legend>Personal Information</legend>
+           <br>
+           <div>
+               <label for="ngoId">Enter NGO Id</label>
+               <input type="number" name="ngoId" placeholder="eg. 1" [(ngModel)]="ngo.ngoId">
+           </div>
+           <br>
+           <div>
+               <label for="ngoName">Enter NGO Name</label>
+               <input type="text" name="ngoName"[(ngModel)]="ngo.ngoName">
+           </div>
+           <br>
+             <div>
+                 <label for="ngoAddress">Enter NGO Address</label>
+                 <input type="text" name="ngoAddress"[(ngModel)]="ngo.ngoAddress">
+             </div>
+           <br>
+           <div>
+               <label for="ngoPincode">Enter NGO Pincode</label>
+               <input type="number" name="ngoPincode" placeholder="eg. 1" [(ngModel)]="ngo.ngoPincode">
+           </div>
+           <br>
+           <div>
+               <label for="ngoEmailId">Enter NGO EmailId</label>
+               <input type="ngoEmailId" name="ngoEmailId"[(ngModel)]="ngo.ngoEmailId">
+            </div>
+            <br>
+            <div>
+                <label for="ngoContactNumber">Enter Contact Number</label>
+                <input type="text" name="ngoContactNumber"[(ngModel)]="ngo.ngoContactNumber">
+            </div>
+            <br>
+              <div>
+                  <label for="ngoWebsite">Enter Website</label>
+                  <input type="text" name="ngoWebsite"[(ngModel)]="ngo.ngoWebsite">
+              </div>
+            <br>
+       <br>
+       <div style="text-align: center;">
+           <input type="submit">
+           <button type="reset" (click)="cancel()">Cancel</button>
+       </div>
+<br>
+   </fieldset>
+</form>
+
+
+
+
+   

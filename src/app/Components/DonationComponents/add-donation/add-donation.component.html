@@ -1,0 +1,46 @@
+<p>add-donation works!</p>
+<form style="text-align: center;" (ngSubmit)="onSubmit()">
+
+    <fieldset>
+       <legend style="text-align: center;"><h1>Add Donation Details </h1> </legend>
+<br>
+           <legend>Personal Information</legend>
+           <br>
+           <div>
+                 <label for="donationType">Enter Donation Type</label>
+                 <input type="text" name="donationType" [(ngModel)]="donation.donationType">
+           </div>
+           <br>
+           <div>
+               <label for="donationQuantity">Enter Donation Quantity</label>
+               <input type="number" name="donationQuantity" placeholder="eg. 1" [(ngModel)]="donation.donationQuantity">
+           </div>
+           <br>
+           <div>
+               <label for="ngoId">Enter NGO Id</label>
+               <input type="number" name="ngoId" placeholder="eg. 1" [(ngModel)]="donation.ngoId">
+           </div>
+           <br>
+           <div>
+               <label for="donorId">Enter Donor Id</label>
+               <input type="number" name="donorId" placeholder="eg. 1" [(ngModel)]="donation.donorId">
+           </div>
+           <br>
+           <div>
+               <label for="donationAddress">Enter Donation Address</label>
+               <input type="text" name="donationAddress" [(ngModel)]="donation.donationAddress">
+           </div>
+         <br>
+         <div>
+             <label for="donationPincode">Enter Donation Pincode</label>
+             <input type="number" name="donationPincode" placeholder="eg. 1" [(ngModel)]="donation.donationPincode">
+         </div>
+            <br>
+       <br>
+       <div style="text-align: center;">
+           <input type="submit">
+           <button type="reset" (click)="cancel()">Cancel</button>
+       </div>
+<br>
+   </fieldset>
+</form>
